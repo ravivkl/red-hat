@@ -8,7 +8,7 @@ spec:
   selector: {{ .Chart.Name }}
     matchLabels:
 # set your lab user name
-      app: user6-hello-world
+      app: {{ .Chart.Name }}
   template:
     metadata:
       labels:
