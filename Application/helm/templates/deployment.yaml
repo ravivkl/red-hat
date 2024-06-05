@@ -5,7 +5,7 @@ metadata:
   name: {{ .Chart.Name }}
 spec:
   replicas: {{ .Values.ReplicaNumber }}
-  selector: {{ .Chart.Name }}
+  selector:
     matchLabels:
 # set your lab user name
       app: {{ .Chart.Name }}
